@@ -1,0 +1,99 @@
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-jmxtq[0m
+{"level":"warn","ts":1568056458.157716,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568056458.158296,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-l6wd6[0m
+{"level":"warn","ts":1568056460.1030705,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568056460.104829,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-cb-kubecd-environment-pr-5-ksc2q[0m
+{"level":"warn","ts":1568056467.1262898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568056468.1854753,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/environment-pr-5390-19-tekton-gkebdd-staging.git @ 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392 in path /workspace/source"}
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:70f6a3341b0d8c55ed4e95f30d57cc659e6f7392,1:4bb4869a525d35bc9dded2c55df10363e305d820
+DEBUG: ran git fetch --unshallow origin 4bb4869a525d35bc9dded2c55df10363e305d820: 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 4bb4869a525d35bc9dded2c55df10363e305d820 in 
+Merged SHA 4bb4869a525d35bc9dded2c55df10363e305d820 with commit message 'chore: Promote bdd-spring-1568056143 to version 0.0.1' into base branch master
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 4bb4869a525d35bc9dded2c55df10363e305d820: 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 4bb4869a525d35bc9dded2c55df10363e305d820 in 
+Merged SHA 4bb4869a525d35bc9dded2c55df10363e305d820 with commit message 'chore: Promote bdd-spring-1568056143 to version 0.0.1' into base branch master
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+selected pack: /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/environment
+Effective pipeline written to jenkins-x-promotion-build-effective.yml
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+PipelineActivity for cb-kubecd-environment-pr-5390-19-tekton-gkebdd-staging-PR-1-1
+Applying changes 
+upserted PipelineResource cb-kubecd-environment-pr-5390-1 for the git repository https://github.com/cb-kubecd/environment-pr-5390-19-tekton-gkebdd-staging.git
+upserted Task cb-kubecd-environment-pr-5390-1-from-build-pack-1
+upserted Pipeline cb-kubecd-environment-pr-5390-1-1
+created PipelineRun cb-kubecd-environment-pr-5390-1-1
+created PipelineStructure cb-kubecd-environment-pr-5390-1-1
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-credential-initializer-zxmwx[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-zxmwx[0m
+{"level":"warn","ts":1568056487.459648,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568056487.4635181,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-working-dir-initializer-42qj9[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-42qj9[0m
+{"level":"warn","ts":1568056490.1754937,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568056490.1775148,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-place-tools[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-source-cb-kubecd-environment-pr-5390-1-mxvft[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cb-kubecd-environment-pr-5390-1-mxvft[0m
+{"level":"warn","ts":1568056576.393286,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568056577.5496912,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/environment-pr-5390-19-tekton-gkebdd-staging.git @ master in path /workspace/source"}
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-git-merge[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:70f6a3341b0d8c55ed4e95f30d57cc659e6f7392,1:4bb4869a525d35bc9dded2c55df10363e305d820
+DEBUG: ran git fetch origin 4bb4869a525d35bc9dded2c55df10363e305d820: 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 70f6a3341b0d8c55ed4e95f30d57cc659e6f7392 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 4bb4869a525d35bc9dded2c55df10363e305d820 in 
+Merged SHA 4bb4869a525d35bc9dded2c55df10363e305d820 with commit message 'chore: Promote bdd-spring-1568056143 to version 0.0.1' into base branch master
+
+waiting for stage [32mfrom-build-pack[0m : container [32mstep-build-helm-build[0m to start...
+
+
+Showing logs for build [32mmeta-cb-kubecd-environment-pr-5-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
